@@ -1,63 +1,104 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FinTech Platform</title>
-    <link rel="stylesheet" href="fintech.css">
-</head>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f7ff;
+}
 
-<body>
+/* HEADER SECTION */
+.container1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: white;
+    padding: 15px 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
 
-    <!-- TOP NAVBAR -->
-    <div class="container1">
-        <div class="brand">FinPay</div>
+.brand {
+    font-size: 24px;
+    font-weight: bold;
+    color: #1a73e8;
+}
 
-        <div class="searchbar">
-            <input type="text" placeholder="Search transactions, features" class="search1">
-        </div>
+.search1 {
+    padding: 8px;
+    width: 200px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
 
-        <div class="buttons">
-            <button class="login">Login</button>
-            <button class="signup">Sign Up</button>
-        </div>
-    </div>
+.buttons button {
+    padding: 8px 16px;
+    margin-left: 10px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-    <!-- HERO SECTION -->
-    <div class="container2">
-        <h1>Smart Digital Payments Made Easy</h1>
+.login {
+    background: #1a73e8;
+    color: white;
+}
 
-        <p>Manage your money, track expenses, send payments, and analyze your spending — all in one secure platform.</p>
+.signup {
+    background: #34a853;
+    color: white;
+}
 
-        <div class="quick-actions">
-            <input type="text" placeholder="Enter amount or recipient" class="action-search">
-            <button class="action-btn">Send Money</button>
-        </div>
-    </div>
+/* HERO SECTION */
+.container2 {
+    padding: 40px;
+    text-align: center;
+}
 
-    <!-- FEATURES SECTION -->
-    <div class="container3">
-        <h2>Our Key Features</h2>
+.container2 h1 {
+    font-size: 32px;
+}
 
-        <div class="features">
+.container2 p {
+    width: 60%;
+    margin: auto;
+    font-size: 18px;
+    color: #555;
+}
 
-            <div class="feature-box">
-                <h3>💳 Instant Payments</h3>
-                <p>Send money anytime, anywhere with 100% secure transactions.</p>
-            </div>
+.quick-actions {
+    margin-top: 20px;
+}
 
-            <div class="feature-box">
-                <h3>📊 Expense Tracking</h3>
-                <p>Monitor your spending with smart analytics and charts.</p>
-            </div>
+.action-search {
+    padding: 10px;
+    width: 250px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+}
 
-            <div class="feature-box">
-                <h3>🔒 Secure Wallet</h3>
-                <p>Advanced encryption keeps your financial data safe.</p>
-            </div>
+.action-btn {
+    padding: 10px 20px;
+    background: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
 
-        </div>
-    </div>
+/* FEATURES */
+.container3 {
+    background: white;
+    padding: 30px;
+    margin-top: 20px;
+}
 
-</body>
-</html>
+.features {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.feature-box {
+    background: #e8f0fe;
+    padding: 20px;
+    width: 28%;
+    border-radius: 12px;
+}
+
